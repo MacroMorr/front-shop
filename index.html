@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend shop design test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+<!--header start-->
+<header class="header">
+    <div class="header-1">
+        <a href="#" class="logo">Logo</a>
+
+        <form action="#" class="search-form">
+            <input type="search" name="" placeholder="поиск..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#featured">избранный</a>
+            <a href="#arrivals">новое</a>
+            <a href="#reviews">отзывы</a>
+            <a href="#blogs">блог</a>
+        </nav>
+    </div>
+</header>
+<!--header end-->
+
+<!--bottom navbar-->
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+</nav>
+
+<!--login form-->
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="#">
+        <h3>Авторизация</h3>
+        <span>Имя пользователя</span>
+        <label><input type="email" name="" class="box" placeholder="Введите email" /></label>
+        <span>Пароль</span>
+        <label><input type="password" name="" class="box" placeholder="Введите пароль" /></label>
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me"/>
+            <label for="remember-me">Запомнить</label>
+        </div>
+        <input type="submit" value="sing in" class="btn"/>
+        <p>Забыли пароль? <a href="#">нажми сюда</a></p>
+        <p>Забыли имя аккаунта? <a href="#">нажми сюда</a></p>
+    </form>
+</div>
+
+<!--home start-->
+<section class="home" id="home">
+    <div class="row">
+        <div class="content">
+            <h3>Скидки до 75%</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <a href="#" class="btn">Купить сейчас</a>
+        </div>
+
+        <div class="swiper show-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="image/sale1.png" alt=""/></a>
+                <a href="#" class="swiper-slide"><img src="image/blog-2.png" alt=""/></a>
+                <a href="#" class="swiper-slide"><img src="image/blog-3.png" alt=""/></a>
+                <a href="#" class="swiper-slide"><img src="image/blog-4.png" alt=""/></a>
+                <a href="#" class="swiper-slide"><img src="image/blog-5.png" alt=""/></a>
+                <a href="#" class="swiper-slide"><img src="image/blog-6.png" alt=""/></a>
+            </div>
+            <img src="image/stand.png" alt="" class="stand"/>
+        </div>
+    </div>
+</section>
+<!--home end-->
+
+<!-- icons section start -->
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-plane"></i>
+        <div class="content">
+            <h3>бесплатная доставка</h3>
+            <p>заказ от 2000&#8381;</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>безопасный способ оплаты</h3>
+            <p>удобный сервис</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>простой возврат</h3>
+            <p>10 дней на возврат</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>поддержка 24/7</h3>
+            <p>звоните в любое время</p>
+        </div>
+    </div>
+</section>
+<!-- icons section end -->
+
+<!--selected product section start-->
+<section class="featured" id="featured">
+    <h1 class="heading"> <span>Избранный товар</span> </h1>
+    <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Щит Викинга</h3>
+                    <div class="price">&#8381; 3999 <span>&#8381; 8999</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Компьютер</h3>
+                    <div class="price">&#8381; 41000 <span>&#8381; 89990</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Цветы</h3>
+                    <div class="price">&#8381; 1999<span>&#8381; 3999</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Спутник</h3>
+                    <div class="price">&#8381; 9999<span>&#8381; 20999</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Прокат на шаре</h3>
+                    <div class="price">&#8381; 3999<span>&#8381; 8999</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Путешествия</h3>
+                    <div class="price">&#8381; 7999<span>&#8381; 12999</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Книги</h3>
+                    <div class="price">&#8381; 999<span>&#8381; 2999</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Подарки</h3>
+                    <div class="price">&#8381; 3999<span>&#8381; 8999</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/sale1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Еда и вода</h3>
+                    <div class="price">&#8381; 99<span>&#8381; 199</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-13.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Черешня</h3>
+                    <div class="price">&#8381; 399<span>&#8381; 799</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-11.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кости</h3>
+                    <div class="price">&#8381; 99<span>&#8381; 299</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/blog-12.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Сладости</h3>
+                    <div class="price">&#8381; 79.99<span>&#8381; 119.99</span></div>
+                    <a href="#" class="btn">Оплатить</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-rtl swiper-button-next"></div>
+        <div class="swiper-rtl swiper-button-prev"></div>
+    </div>
+</section>
+<!--selected product section ends-->
+
+<!--newsletter section starts-->
+<section class="newsletter">
+    <form action="">
+        <h3>Подписаться на обновления</h3>
+        <label><input type="email" name="" placeholder="введите email" class="box"></label>
+        <label><input type="submit" value="подписаться" class="btn"></label>
+    </form>
+</section>
+<!--newsletter section ends-->
+
+<!--arrivals section starts-->
+<section class="arrivals" id="arrivals">
+    <h1 class="heading"><span>новое поступление</span></h1>
+    <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-12.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>новое поступление</h3>
+                    <div class="price">&#8381; 79.99 <span>&#8381; 119.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-11.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>новое поступление</h3>
+                    <div class="price">&#8381; 79.99 <span>&#8381; 119.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>новое поступление</h3>
+                    <div class="price">&#8381; 79.99 <span>&#8381; 119.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>новое поступление</h3>
+                    <div class="price">&#8381; 79.99 <span>&#8381; 119.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>новое поступление</h3>
+                    <div class="price">&#8381; 79.99 <span>&#8381; 119.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>новое поступление</h3>
+                    <div class="price">&#8381; 79.99 <span>&#8381; 119.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>новое поступление</h3>
+                    <div class="price">&#8381; 79.99 <span>&#8381; 119.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>новое поступление</h3>
+                    <div class="price">&#8381; 79.99 <span>&#8381; 119.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>новое поступление</h3>
+                    <div class="price">&#8381; 79.99 <span>&#8381; 119.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>новое поступление</h3>
+                    <div class="price">&#8381; 79.99 <span>&#8381; 119.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<!--arrivals section ends-->
+
+<!--deal section starts-->
+<section class="deal">
+
+    <div class="content">
+        <h3>выгодная покупка сегодня</h3>
+        <h1>скидка до 50%</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, animi assumenda atque cum dolorem ex illo laborum magni maiores minus modi numquam quae quam quos, rerum sit soluta vero voluptatem.</p>
+        <a href="#" class="btn">купить сейчас</a>
+    </div>
+    <div class="image">
+        <img src="image/deal-img.png" alt=""/>
+    </div>
+
+</section>
+<!--deal section ends-->
+
+<!--reviews section starts-->
+<section class="reviews" id="reviews">
+    <h1 class="heading"> <span>Отзывы клиентов</span> </h1>
+    <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt=""/>
+                <h3>Mike Deo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti dolor enim excepturi maxime nam nulla omnis </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt=""/>
+                <h3>Rick Miron</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti dolor enim excepturi </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt=""/>
+                <h3>Agata Milton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti dolor enim excepturi maxime nam nulla </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt=""/>
+                <h3>Rihanna Denton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti dolor enim excepturi maxime nam </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-5.png" alt=""/>
+                <h3>Bill Sails</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-6.png" alt=""/>
+                <h3>Garry Potter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti dolor </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--reviews section ends-->
+
+<!--blog section starts-->
+<section class="blogs" id="blogs">
+    <h1 class="heading"> <span>наши блоги</span> </h1>
+    <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-1.jpg" alt=""/>
+                </div>
+                <div class="content">
+                    <h3>Кулинария</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, temporibus.</p>
+                    <a href="#" class="btn">читать дальше</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-2.jpg" alt=""/>
+                </div>
+                <div class="content">
+                    <h3>сделано руками</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, temporibus.</p>
+                    <a href="#" class="btn">читать дальше</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-3.jpg" alt=""/>
+                </div>
+                <div class="content">
+                    <h3>сделай сам</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, temporibus.</p>
+                    <a href="#" class="btn">читать дальше</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-4.jpg" alt=""/>
+                </div>
+                <div class="content">
+                    <h3>отдых на природе</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, temporibus.</p>
+                    <a href="#" class="btn">читать дальше</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-5.jpg" alt=""/>
+                </div>
+                <div class="content">
+                    <h3>рзвлечение спорт</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, temporibus.</p>
+                    <a href="#" class="btn">читать дальше</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/blog-6.jpg" alt=""/>
+                </div>
+                <div class="content">
+                    <h3>день рождение</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, temporibus.</p>
+                    <a href="#" class="btn">читать дальше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--blog section ends-->
+
+<!--footer section starts-->
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <h3>наши локации</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Губкин </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Белгород </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Воронеж </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Курск </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Старый оскол </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Липецк </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Тула </a>
+        </div>
+
+        <div class="box">
+            <h3>быстрые ссылки</h3>
+            <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#featured"> <i class="fas fa-arrow-right"></i> Избранный </a>
+            <a href="#arrivals"> <i class="fas fa-arrow-right"></i> Новое </a>
+            <a href="#reviews"> <i class="fas fa-arrow-right"></i> Отзывы </a>
+            <a href="#blogs"> <i class="fas fa-arrow-right"></i> Блог </a>
+        </div>
+
+        <div class="box">
+            <h3>дополнительные ссылки</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> инфо аккаунт </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> заказные товары </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> политика конфиденциальности </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Способ оплаты </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Наши сервисы </a>
+        </div>
+
+        <div class="box">
+            <h3>контакты</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +7 900 222 33 33 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +7 999 555 33 77 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> my-shop@gmail.com </a>
+            <img src="image/worldmap.png" class="map" alt=""/>
+        </div>
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="credit">компания <span>У нас есть всё</span> | реально всё</div>
+</section>
+<!--footer section ends-->
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
